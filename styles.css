@@ -53,9 +53,9 @@ a{text-decoration:none;color:inherit}
 .route__info p{color:#d5e2f4}
 .map-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
 .map-link-chip{display:inline-flex;align-items:center;justify-content:center;padding:12px 16px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);color:#fff;font-weight:800}
-.route-map-card{margin:0;border-radius:28px;overflow:hidden;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);box-shadow:0 20px 50px rgba(0,0,0,.22)}
+.route-map-card{margin:0;max-width:560px;justify-self:end;border-radius:28px;overflow:hidden;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);box-shadow:0 20px 50px rgba(0,0,0,.22)}
 .route-map-card__link{display:block}
-.route-map-card__image{display:block;width:100%;height:auto;aspect-ratio:5 / 3;object-fit:cover}
+.route-map-card__image{display:block;width:100%;height:auto;max-height:340px;aspect-ratio:5 / 3;object-fit:cover}
 .route-map-card__caption{display:grid;gap:6px;padding:18px 20px;background:linear-gradient(180deg,rgba(8,18,32,.3),rgba(8,18,32,.7))}
 .route-map-card__caption strong{font-size:24px}
 .route-map-card__caption span{color:#d5e2f4;font-weight:700}
@@ -101,5 +101,5 @@ textarea{min-height:130px;resize:vertical}
 .service-alert{display:grid;gap:8px;margin-top:24px;padding:20px 22px;border-radius:22px;background:linear-gradient(180deg,#fff7f7,#fff0f0);border:1px solid #f0cdcd;color:#6b2f2f}
 .service-alert strong{font-size:20px;color:#4f1f1f}
 @media(max-width:1000px){.nav,.header__cta{display:none}.burger{display:block}.nav.is-open{display:grid;position:absolute;top:76px;left:16px;right:16px;background:#0d1a2e;border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:18px}.hero__grid,.request,.route,.footer__grid,.gallery{grid-template-columns:1fr}.cards--4,.cards--3,.hero__stats{grid-template-columns:1fr 1fr}}
-@media(max-width:1000px){.service-hero__grid,.service-highlight,.process-grid{grid-template-columns:1fr}}
+@media(max-width:1000px){.service-hero__grid,.service-highlight,.process-grid{grid-template-columns:1fr}.route-map-card{max-width:none;justify-self:stretch}.route-map-card__image{max-height:none}}
 @media(max-width:760px){.hero__features,.cards--4,.cards--3,.hero__stats,.service-highlight{grid-template-columns:1fr}.hero,.service-hero{padding:44px 0 64px}.topbar__inner{justify-content:flex-start}.mobile-call{display:flex;position:fixed;left:16px;right:16px;bottom:14px;z-index:20;background:var(--red);color:#fff;min-height:52px;border-radius:16px;align-items:center;justify-content:center;font-weight:900;box-shadow:0 12px 30px rgba(0,0,0,.3)}}
