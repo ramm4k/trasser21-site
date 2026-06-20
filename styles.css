@@ -60,6 +60,7 @@ pointer-events:none}
 .service-photos__image{display:block;width:100%;height:100%;min-height:360px;object-fit:cover;transform:scale(1.02)}
 .service-photos__image--front{object-position:center 42%}
 .service-photos__image--base-angle{object-position:center center}
+.service-photos__image--aerial-classic{object-position:center 36%}
 .service-photos__image--aerial-new{object-position:center 38%}
 .service-photos__item figcaption{position:absolute;left:0;right:0;bottom:0;z-index:1;padding:22px 20px 22px;color:#eef5ff;line-height:1.65;background:linear-gradient(180deg,transparent,rgba(8,17,30,.06))}
 .card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:var(--shadow);transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease}.card:hover{transform:translateY(-3px);box-shadow:0 22px 44px rgba(15,23,42,.1);border-color:#c8d7e8}.card h3{margin:0 0 10px;font-size:22px}.card p{margin:0;color:#667892;line-height:1.75}.card--dark{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.03));border-color:rgba(255,255,255,.1);box-shadow:none}.card--dark p{color:#c8d5e8}.card--dark h3{color:#fff}.card--dark:hover{box-shadow:0 20px 42px rgba(0,0,0,.16);border-color:rgba(255,255,255,.14)}.card--accent-blue{background:linear-gradient(180deg,#f7fbff,#edf4ff)}.card--accent-red{background:linear-gradient(180deg,#fff8f8,#fff0f0)}.num{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,var(--red),var(--blue));color:#fff;font-weight:900;margin-bottom:14px}
@@ -72,8 +73,8 @@ pointer-events:none}
 .card--service-photo p{color:#dbe6f6}
 .card--service-photo .text-link{color:#fff}
 .card--service-photo .num{box-shadow:0 12px 24px rgba(0,0,0,.22)}
-.card--service-tachographs{--service-card-bg:url("assets/hero-service-sign.webp");--service-card-position:center 38%}
-.card--service-autoelectric{--service-card-bg:url("assets/service-interior.webp");--service-card-position:center center}
+.card--service-tachographs{--service-card-bg:url("assets/service-card-tachograph.png");--service-card-position:center center}
+.card--service-autoelectric{--service-card-bg:url("assets/service-card-autoelectric.png");--service-card-position:center center}
 .card--service-truck-repair{--service-card-bg:url("assets/service-repair-bay-new.webp");--service-card-position:center center}
 .card--service-maintenance{--service-card-bg:url("assets/service-exterior-aerial-new.webp");--service-card-position:center 46%}
 .card--service-trucks{--service-card-bg:url("assets/service-truck.webp");--service-card-position:center 54%}
