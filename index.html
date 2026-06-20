@@ -52,7 +52,7 @@
         <a href="#route">Маршрут</a>
         <a href="#contacts">Контакты</a>
       </nav>
-      <a class="btn btn--red header__cta" href="#request">Записаться</a>
+      <a class="btn btn--red header__cta" href="tel:+79613447096">Позвонить</a>
       <button class="burger" id="burger" aria-label="Открыть меню">☰</button>
     </div>
   </header>
@@ -79,8 +79,8 @@
             <li><strong>1 адрес</strong><span>Стационарный сервис с понятным маршрутом.</span></li>
           </ul>
           <div class="hero__actions">
-            <a class="btn btn--red" href="#request">Записаться на ремонт</a>
-            <a class="btn btn--blue" href="tel:+79613447096">Позвонить</a>
+            <a class="btn btn--red" href="tel:+79613447096">Позвонить в сервис</a>
+            <a class="btn btn--blue" href="#services">Смотреть услуги</a>
             <a class="btn btn--light" target="_blank" rel="noopener" href="https://yandex.ru/maps/?text=Лесная%20ул.%2C%2013%2C%20д.%20Хирле-Сир">Построить маршрут</a>
           </div>
           <div class="hero__features">
@@ -102,10 +102,8 @@
           <div class="hero__panel">
             <p class="hero__panel-label">Быстрый контакт</p>
             <h2>Контакты сервиса</h2>
-            <a href="tel:+79613447096"><small>Тахографы</small><strong>+7 (961) 344-70-96</strong></a>
-            <a href="tel:+79093019603"><small>Бухгалтерия</small><strong>+7 (909) 301-96-03</strong></a>
+            <a href="tel:+79613447096"><small>Основной номер</small><strong>+7 (961) 344-70-96</strong></a>
             <a href="tel:+78352361296"><small>Доп. номер</small><strong>+7 (8352) 36-12-96</strong></a>
-            <a href="tel:+79674701296"><small>Доп. номер</small><strong>+7 (967) 470-12-96</strong></a>
             <div class="hero__panel-note">
               <strong>Маршрут до сервиса</strong>
               <span>Лесная ул., 13, д. Хирле-Сир · координаты 56.050657, 47.261563</span>
@@ -136,7 +134,7 @@
         </div>
         <div class="cards cards--4">
           <article class="card"><h3>Стационарное СТО</h3><p>Не выездной формат: клиент сразу понимает, куда ехать и где будет ремонт.</p></article>
-          <article class="card"><h3>Понятная запись</h3><p>Позвонить, оставить заявку или сразу открыть маршрут можно в пару касаний.</p></article>
+          <article class="card"><h3>Быстрый контакт</h3><p>Позвонить в сервис или сразу открыть маршрут можно в пару касаний.</p></article>
           <article class="card"><h3>Под грузовики и спецтехнику</h3><p>Страница уже собрана под основные запросы коммерческой техники.</p></article>
           <article class="card"><h3>Быстро с телефона</h3><p>Мобильная версия упрощает звонок и помогает не потеряться по дороге.</p></article>
         </div>
@@ -209,7 +207,7 @@
         <div class="process-grid">
           <article class="process-card">
             <span class="num">01</span>
-            <h3>Звонок или заявка</h3>
+            <h3>Звонок в сервис</h3>
             <p>Вы описываете поломку, тип техники и удобное время визита.</p>
           </article>
           <article class="process-card">
@@ -325,7 +323,7 @@
           </details>
           <details class="faq__item">
             <summary>Нужно ли заранее записываться?</summary>
-            <p>Лучше позвонить заранее или оставить заявку, чтобы уточнить загрузку и удобное время приема техники.</p>
+            <p>Лучше позвонить заранее, чтобы уточнить загрузку сервиса и удобное время приема техники.</p>
           </details>
           <details class="faq__item">
             <summary>Какие работы можно уточнить по телефону?</summary>
@@ -354,43 +352,34 @@
     <section class="section section--light" id="request">
       <div class="container request">
         <div>
-          <p class="eyebrow eyebrow--red">Запись</p>
-          <h2>Оставьте заявку</h2>
-          <p class="section__lead">Сейчас форма демонстрационная. Следующий шаг для запуска сайта: подключить отправку в Telegram, WhatsApp, CRM или на почту.</p>
+          <p class="eyebrow eyebrow--red">Контакт</p>
+          <h2>Свяжитесь с сервисом</h2>
+          <p class="section__lead">Самый быстрый способ обращения сейчас — звонок. По телефону удобнее сразу обсудить поломку, уточнить направление работ и понять, когда лучше подъехать.</p>
           <ul class="request__notes">
-            <li>Укажите номер, чтобы с вами быстро связались.</li>
-            <li>Выберите направление работ для первичной сортировки заявок.</li>
-            <li>Если ремонт срочный, лучше сразу позвонить.</li>
+            <li>Если вопрос срочный, лучше звонить сразу.</li>
+            <li>По телефону можно быстро уточнить тип техники и симптомы неисправности.</li>
+            <li>Маршрут до сервиса открывается в один клик.</li>
           </ul>
         </div>
-        <form class="form" id="request-form">
-          <label class="form__field">
-            <span>Ваше имя</span>
-            <input type="text" name="name" placeholder="Например, Иван" autocomplete="name" required>
-          </label>
-          <label class="form__field">
-            <span>Телефон</span>
-            <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" required>
-          </label>
-          <label class="form__field">
-            <span>Услуга</span>
-            <select name="service" required>
-            <option value="">Выберите услугу</option>
-            <option>Диагностика</option>
-            <option>Автоэлектрика</option>
-            <option>Слесарный ремонт</option>
-            <option>ТО и обслуживание</option>
-            <option>Ремонт грузовиков</option>
-            <option>Ремонт спецтехники</option>
-            </select>
-          </label>
-          <label class="form__field">
-            <span>Комментарий</span>
-            <textarea name="comment" placeholder="Опишите поломку или задачу"></textarea>
-          </label>
-          <button class="btn btn--red" type="submit">Отправить заявку</button>
-          <p class="form__hint">Нажимая кнопку, вы отправляете демо-заявку. Подключение реальной отправки можно сделать следующим этапом.</p>
-        </form>
+        <div class="contact-panel">
+          <div class="contact-panel__item">
+            <span>Основной номер</span>
+            <a href="tel:+79613447096">+7 (961) 344-70-96</a>
+          </div>
+          <div class="contact-panel__item">
+            <span>Доп. номер</span>
+            <a href="tel:+78352361296">+7 (8352) 36-12-96</a>
+          </div>
+          <div class="contact-panel__item">
+            <span>График работы</span>
+            <strong>Пн-Пт: 08:00-17:00</strong>
+          </div>
+          <div class="contact-panel__actions">
+            <a class="btn btn--red" href="tel:+79613447096">Позвонить в сервис</a>
+            <a class="btn btn--light" target="_blank" rel="noopener" href="https://yandex.ru/maps/?text=Лесная%20ул.%2C%2013%2C%20д.%20Хирле-Сир">Построить маршрут</a>
+          </div>
+          <p class="form__hint">Адрес сервиса: Лесная ул., 13, д. Хирле-Сир. Перед выездом лучше коротко позвонить и уточнить загрузку.</p>
+        </div>
       </div>
     </section>
   </main>
