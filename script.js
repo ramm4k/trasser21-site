@@ -6,6 +6,8 @@ const lightboxImage = document.getElementById('lightbox-image');
 const lightboxCaption = document.getElementById('lightbox-caption');
 const lightboxClose = lightbox?.querySelector('[data-lightbox-close]');
 const lightboxTriggers = document.querySelectorAll('[data-lightbox]');
+const mobileCall = document.querySelector('.mobile-call');
+const contactSection = document.getElementById('request');
 
 if (burger && nav) {
   burger.addEventListener('click', () => nav.classList.toggle('is-open'));
@@ -92,4 +94,13 @@ if (lightbox && lightboxImage && lightboxCaption && lightboxClose && lightboxTri
   lightboxImage.addEventListener('error', () => {
     lightboxCaption.textContent = 'Не удалось открыть фото. Попробуйте обновить страницу.';
   });
+}
+
+if (mobileCall && contactSection && 'IntersectionObserver' in window) {
+  const contactObserver = new IntersectionObserver(entries => {
+    const isContactVisible = entries.some(entry => entry.isIntersecting);
+    mobileCall.classList.toggle('is-hidden', isContactVisible);
+  }, { threshold: 0.18 });
+
+  contactObserver.observe(contactSection);
 }
