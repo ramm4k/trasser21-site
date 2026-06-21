@@ -79,6 +79,7 @@ pointer-events:none}
 .card--service-maintenance{--service-card-bg:url("assets/service-exterior-aerial-new.webp");--service-card-position:center 46%}
 .card--service-trucks{--service-card-bg:url("assets/service-truck.webp");--service-card-position:center 54%}
 .card--service-special{--service-card-bg:url("assets/service-aerial.webp");--service-card-position:center 36%}
+.card--service-driver-cards{--service-card-bg:url("assets/service-card-driver-card.png");--service-card-position:center center}
 .text-link{display:inline-flex;align-items:center;gap:8px;margin-top:auto;font-weight:800;color:#0b397f}
 .card--dark .text-link{color:#fff}
 .text-link::after{content:"→";font-size:16px}
